@@ -10,7 +10,7 @@ RUN pip install scrapy scrapyd scrapy-sentry scrapy-sqlitem scrapy-splitvariants
                 scrapy-proxy-rotator scrapy-proxies scrapy-pagestorage scrapy-notifications \
                 scrapy-rabbitmq-link scrapy-jsonrpc scrapy-itemagic scrapy-inline-requests \
                 scrapy-fake-useragent scrapy-eagle scrapy-beautifulsoup \
-                scrapy-elasticsearch-bulk-item-exporter requests
+                scrapy-elasticsearch-bulk-item-exporter requests ScrapyElasticSearch
 
 RUN apk del libxml2-dev libxslt-dev zlib-dev libffi-dev python-dev \
             openssl-dev gcc musl-dev linux-headers && \

@@ -6,7 +6,7 @@ RUN apk add --no-cache libxml2 libxml2-dev libxslt libxslt-dev zlib zlib-dev lib
     wget -O - https://bootstrap.pypa.io/get-pip.py | python
 
 RUN pip install scrapy scrapyd scrapy-sentry scrapy-proxy-rotator scrapy-proxies scrapy-beautifulsoup \
-                requests ScrapyElasticSearch
+                requests ScrapyElasticSearch rethinkdb
 
 RUN apk del libxml2-dev libxslt-dev zlib-dev libffi-dev python-dev \
             openssl-dev gcc musl-dev linux-headers && \
